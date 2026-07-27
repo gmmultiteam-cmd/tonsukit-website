@@ -152,7 +152,7 @@ padding: 20px;
 
 /* ═══ SY SUITE PRODUCT GRID (Home) ═══ */
 .fbadge { display: inline-block; background: rgba(76,141,255,0.18); color: var(--accent); font-size: 11.5px; font-weight: 700; letter-spacing: 0.06em; text-transform: uppercase; padding: 4px 10px; border-radius: 999px; margin-bottom: 12px; }
-.product-grid { display: grid; grid-template-columns: repeat(3, 1fr); gap: 16px; margin-bottom: 24px; }
+.product-grid { display: grid; grid-template-columns: repeat(3, 1fr); gap: 16px; margin-bottom: 24px; align-items: start; }
 .product-card {
 background: var(--panel);
 border: 1px solid var(--border);
@@ -163,6 +163,12 @@ flex-direction: column;
 gap: 10px;
 }
 .product-card.live { border-color: rgba(76,141,255,0.35); }
+.product-card.has-logo { padding: 0; overflow: hidden; }
+.pc-banner { position: relative; line-height: 0; background: #0e1116; }
+.pc-banner img { width: 100%; height: auto; display: block; }
+.pc-banner .pc-status { position: absolute; top: 10px; right: 10px; }
+.pc-body { padding: 16px 20px 20px; display: flex; flex-direction: column; gap: 10px; flex: 1; }
+.pc-body h3 { font-size: 15.5px; }
 .pc-top { display: flex; align-items: center; justify-content: space-between; }
 .pc-icon { width: 40px; height: 40px; display: flex; align-items: center; justify-content: center; flex-shrink: 0; }
 .pc-icon svg { width: 100%; height: 100%; }
