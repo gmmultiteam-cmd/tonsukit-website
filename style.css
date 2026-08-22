@@ -230,6 +230,18 @@ gap: 10px;
 .link-item .cat { color: var(--muted); font-size: 11.5px; text-transform: uppercase; letter-spacing: 0.05em; margin-bottom: 4px; }
 
 /* ═══ FOOTER ═══ */
+/* ── DBD e-commerce registration band (ทะเบียนพาณิชย์อิเล็กทรอนิกส์) ──
+   Required footer content for Thai e-commerce registration: the DBD Registered
+   emblem plus the payment methods accepted (processed by Paddle). White tiles
+   so the marks read correctly on the dark footer. */
+.footer-pay{display:flex;align-items:center;justify-content:center;gap:26px;
+  flex-wrap:wrap;padding:20px 20px 4px}
+.dbd-badge{height:62px;width:auto;background:#fff;border-radius:8px;padding:5px 10px}
+.paybadges{display:flex;gap:10px;flex-wrap:wrap;align-items:center;justify-content:center}
+.paybadge{background:#fff;border-radius:6px;display:block;box-shadow:0 0 0 1px #2a3140}
+.paybadge svg{height:38px;width:60px;display:block}
+.footer-pay-note{width:100%;text-align:center;font-size:11px;color:#8b95a5;margin:6px 0 0}
+
 .footer {
 border-top: 1px solid var(--border);
 padding: 32px 0 40px;
