@@ -237,11 +237,7 @@ gap: 10px;
 .footer-pay{display:flex;align-items:center;justify-content:center;gap:26px;
   flex-wrap:wrap;padding:20px 20px 4px}
 .dbd-badge{height:62px;width:auto;background:#fff;border-radius:8px;padding:5px 10px}
-/* HIDDEN until the DBD registration is APPROVED — the emblem belongs to
-   registered businesses. When the certificate arrives: delete the next rule
-   and swap the image for the official numbered emblem. Payment methods stay
-   visible throughout. */
-.dbd-badge{display:none}
+/* DBD registration approved 2026-09-01 — official emblem live. */
 .paybadges{display:flex;gap:10px;flex-wrap:wrap;align-items:center;justify-content:center}
 .paybadge{background:#fff;border-radius:6px;display:block;box-shadow:0 0 0 1px #2a3140}
 .paybadge svg{height:38px;width:60px;display:block}
