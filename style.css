@@ -6,7 +6,8 @@
    .pub-item .case .service-item .link-item .contact-card .footer …) so every content page
    restyles without content edits. Legacy variable names (--muted, --text, --accent …) are
    remapped for the few inline styles that use them.
-   v5 (2026-09-24): hero motto line, five product cards + agent-ready note cell. */
+   v5 (2026-09-24): hero motto line, five product cards + agent-ready note cell.
+   v6 (2026-10-24): SY BridgeNL + SY SmartHub cards (seven products); the note cell spans two columns. */
 
 :root {
   --sy-bg: #ffffff;
@@ -157,6 +158,8 @@ main > .wrap > .page-hero + section.block { padding-top: 40px; }
 .product-card.pc-note .pc-body { padding: 22px 20px 22px; justify-content: center; }
 .product-card.pc-note .pc-meta { color: var(--sy-accent-700); }
 .product-card.pc-note h3 { max-width: 16ch; }
+.product-card.pc-note { grid-column: span 2; }
+.product-card.pc-note .pc-body p { max-width: 62ch; }
 .pc-status { display: inline-block; font-family: var(--sy-font-heading); font-weight: 800; font-size: 11px; letter-spacing: .08em; text-transform: uppercase; padding: 4px 9px; line-height: 1.2; border-radius: 0; white-space: nowrap; }
 .pc-status.live { background: var(--sy-accent); color: #fff; }
 .product-card a.more, .card a.more { font-family: var(--sy-font-heading); font-weight: 800; font-size: 13px; letter-spacing: .04em; text-transform: uppercase; color: var(--sy-accent-700); }
@@ -241,6 +244,7 @@ main > .wrap > .page-hero + section.block { padding-top: 40px; }
   .hero-art { max-width: 520px; }
   .card-grid { grid-template-columns: 1fr 1fr; }
   .product-grid { grid-template-columns: 1fr; }
+  .product-card.pc-note { grid-column: auto; }
   .tl-item { grid-template-columns: 1fr; gap: 4px; }
   .tl-item .when { grid-row: auto; grid-column: 1; }
   .tl-item h3, .tl-item .org, .tl-item p { grid-column: 1; }
